@@ -44,7 +44,7 @@ const ContactSection = () => {
         }
 
         // WhatsApp Redirection
-        const destinationNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "9408500689";
+        const destinationNumber = "9408500689";
         const text = `Hello 👋\nNew Contact Inquiry\n\nName: ${formData.name}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
         const url = `https://wa.me/${destinationNumber}?text=${encodeURIComponent(text)}`;
 

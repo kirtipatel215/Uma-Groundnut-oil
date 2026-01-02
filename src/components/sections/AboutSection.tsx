@@ -1,4 +1,5 @@
-import { User, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import ownerImage from "../../assets/owner.png";
 
 const AboutSection = () => {
     return (
@@ -16,9 +17,13 @@ const AboutSection = () => {
 
                     <div className="glass-card p-8 md:p-12 md:flex items-start gap-12 relative">
                         {/* Visual Element / Owner Placeholder */}
-                        <div className="flex-shrink-0 w-32 h-32 md:w-56 md:h-56 rounded-full bg-blue-100 flex items-center justify-center border-4 border-white shadow-xl mx-auto md:mx-0 mb-8 md:mb-0 relative group self-center">
-                            <User className="w-16 h-16 text-blue-400 group-hover:scale-110 transition-transform" />
-                            <div className="absolute -bottom-2 -right-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full shadow-lg">
+                        <div className="flex-shrink-0 w-32 h-32 md:w-56 md:h-56 rounded-full bg-blue-100 flex items-center justify-center border-4 border-white shadow-xl mx-auto md:mx-0 mb-8 md:mb-0 relative group self-center overflow-hidden">
+                            <img
+                                src={ownerImage}
+                                alt="Jatin Patel - Owner of Uma Groundnut Oil"
+                                className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-500"
+                            />
+                            <div className="absolute -bottom-2 -right-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full shadow-lg z-10">
                                 Owner
                             </div>
                         </div>
