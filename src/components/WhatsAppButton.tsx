@@ -12,7 +12,7 @@ const WhatsAppButton = ({
   variant = "default",
   className = ""
 }: WhatsAppButtonProps) => {
-  const phoneNumber = "9408500689";
+  const phoneNumber = "919408500689";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   if (variant === "floating") {
